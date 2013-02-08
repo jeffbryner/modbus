@@ -1,0 +1,22 @@
+modbus stuff: 
+
+flipper.py: flips modbus coil outputs from true to false and vice versa
+over a range of bits. Operates on a grid, rows 0-4095, 16bits at a time 
+for 0-65535.
+
+Tested with mod-sim from plcsimulator.org
+
+/flipper.py -h
+Usage: flipper.py [options]
+
+Options:
+  -h, --help    show this help message and exit
+  -s START      starting row
+  -e END        starting row
+  -i IPADDRESS  ipaddress to target
+
+example: 
+./flipper.py -s2 -e50 -i 172.16.8.2
+flipping bits from 32,48
+was [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+
