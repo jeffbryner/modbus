@@ -20,3 +20,6 @@ example:
 flipping bits from 32,48
 was [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
 
+Requires: 
+pymodbus: https://github.com/bashwork/pymodbus
+twisted: pip install twisted
